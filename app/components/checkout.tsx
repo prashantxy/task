@@ -82,7 +82,7 @@ const Checkout = ({ customer, cart, totalAmount, onCheckoutComplete, isCustomerR
             transition-all duration-300
             flex items-center justify-center space-x-2
             ${cart.length === 0 || isProcessing || (isCustomerRequired && !customer)
-              ? 'bg-gray-400 cursor-not-allowed'
+              ? 'purple-400 cursor-not-allowed'
               : 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600'
             }
           "
