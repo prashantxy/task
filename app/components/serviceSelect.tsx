@@ -38,6 +38,21 @@ export default function ServiceSelection({ addToCart }: { addToCart: (service: S
             </div>
           </div>
 
+          {/* Search Bar */}
+          <div className="p-4 sm:p-6">
+            <input 
+              type="text" 
+              value={searchTerm} 
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Search services..." 
+              className="
+                w-full p-3 text-sm sm:text-base rounded-xl bg-white border border-gray-300 
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent 
+                shadow-sm placeholder:text-gray-500 mb-6
+              "
+            />
+          </div>
+
           <div className="p-4 sm:p-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {filteredServices.map(service => (
@@ -64,7 +79,7 @@ export default function ServiceSelection({ addToCart }: { addToCart: (service: S
                              truncate w-auto
                                 ">
                       ${service.price.toFixed(2)}
-                 </span>
+                     </span>
 
                     </div>
                     <p className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg overflow-hidden w-full">
