@@ -74,18 +74,17 @@ const Checkout = ({ customer, cart, totalAmount, onCheckoutComplete, isCustomerR
           </div>
         </div>
 
-      <button
+ <button
   onClick={handleCheckout}
   disabled={cart.length === 0 || isProcessing || (isCustomerRequired && !customer)}
-  className="
+  className={`
     w-full py-3 rounded-lg text-black font-semibold 
-    transition-all duration-300
-    flex items-center justify-center space-x-2
     ${cart.length === 0 || isProcessing || (isCustomerRequired && !customer)
       ? 'bg-purple-400 cursor-not-allowed'
-      : 'bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700'
-    }
-  "
+      : 'bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700'}
+    transition-all duration-300
+    flex items-center justify-center space-x-2
+  `}
 >
   {isProcessing ? (
     <>
@@ -115,6 +114,7 @@ const Checkout = ({ customer, cart, totalAmount, onCheckoutComplete, isCustomerR
     "Complete Purchase"
   )}
 </button>
+
 
 
 
