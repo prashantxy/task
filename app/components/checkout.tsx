@@ -78,7 +78,7 @@ const Checkout = ({ customer, cart, totalAmount, onCheckoutComplete, isCustomerR
   onClick={handleCheckout}
   disabled={cart.length === 0 || isProcessing || (isCustomerRequired && !customer)}
   className="
-    w-full py-3 rounded-lg text-white font-semibold 
+    w-full py-3 rounded-lg text-black font-semibold 
     transition-all duration-300
     flex items-center justify-center space-x-2
     ${cart.length === 0 || isProcessing || (isCustomerRequired && !customer)
