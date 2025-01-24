@@ -57,13 +57,15 @@ export default function ServiceSelection({ addToCart }: { addToCart: (service: S
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 break-words w-full">
                         {service.name}
                       </h3>
-                      <span className="
-                        text-base sm:text-lg md:text-xl font-extrabold 
-                        bg-gradient-to-r from-green-400 to-blue-500 
-                        text-transparent bg-clip-text
-                      ">
-                        ${service.price.toFixed(2)}
-                      </span>
+                     <span className="
+                        text-sm sm:text-base md:text-lg font-bold 
+                          bg-gradient-to-r from-green-400 to-blue-500 
+                            text-transparent bg-clip-text
+                             truncate w-auto
+                                ">
+                      ${service.price.toFixed(2)}
+                 </span>
+
                     </div>
                     <p className="text-gray-600 mb-4 text-sm sm:text-base md:text-lg overflow-hidden w-full">
                       {service.description}
