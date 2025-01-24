@@ -5,7 +5,7 @@ const services: Service[] = [
   { id: 1, name: 'Fitness Class', price: 20, category: 'Fitness', description: 'Group fitness class for all levels' },
   { id: 2, name: 'Therapy Session', price: 80, category: 'Health', description: 'One-on-one therapy session' },
   { id: 3, name: 'Workshop', price: 50, category: 'Education', description: 'Interactive learning workshop' },
-  { id: 4, name: 'Consultation', price: 100, category: 'Business', description: 'Professional business consultation' },
+  { id: 4, name: 'Consultat', price: 100, category: 'Business', description: 'Professional business consultation' },
   { id: 5, name: 'Yoga Class', price: 15, category: 'Fitness', description: 'Relaxing yoga session for all levels' },
   { id: 6, name: 'Nutrition Plan', price: 75, category: 'Health', description: 'Personalized nutrition plan' },
   { id: 7, name: 'Language Course', price: 60, category: 'Education', description: '4-week language learning course' },
